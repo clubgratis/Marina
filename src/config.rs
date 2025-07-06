@@ -7,5 +7,5 @@ pub struct Config {
     pub proxy_port: u16,
 
     pub main_page_url: String,
-    pub sub_page_url: String,
+    pub sublink_page_url: String,
 }
