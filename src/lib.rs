@@ -29,7 +29,7 @@ async fn main(req: Request, env: Env, _: Context) -> Result<Response> {
     Router::with_data(config)
         .on_async("/", fe)
         .on_async("/sublink", sublink)
-        .on("/weblink", weblink)
+        .on("/link", link)
         .on_async("/Club-Gratis/:proxyip", tunnel)
         .run(req, env)
         .await
