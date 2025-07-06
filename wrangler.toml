@@ -7,7 +7,7 @@ account_id = "3b22f49432e580f422437fa6ce49a93f"
 workers_dev = true
 
 [[kv_namespaces]]
-binding = "YUMI"
+binding = "MARINA"
 id = "95b7d687fd154f42ae839cae6bf4475d"
 
 [build]
