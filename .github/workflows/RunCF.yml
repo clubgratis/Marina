@@ -1,4 +1,4 @@
-name: Run CF Changle 
+name: Run CF Changle
 
 on:
   workflow_dispatch:
