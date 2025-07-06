@@ -1,4 +1,4 @@
-name = "mari"
+name = "marina"
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
 minify = true
@@ -19,4 +19,4 @@ build = { command = "cargo install worker-build && worker-build --dev" }
 [vars]
 UUID = "ccccccc1-bbbb-4aaa-addd-aaaaaaaaaaa1"
 MAIN_PAGE_URL = "https://raw.githubusercontent.com/MarinaAqua/Marina/refs/heads/main/web/index.html"
-SUB_PAGE_URL = "https://raw.githubusercontent.com/MarinaAqua/Marina/refs/heads/main/web/sublink.html"
+SUBLINK_PAGE_URL = "https://raw.githubusercontent.com/MarinaAqua/Marina/refs/heads/main/web/sublink.html"
