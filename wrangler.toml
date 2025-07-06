@@ -1,0 +1,22 @@
+name = "marina"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-05-23"
+minify = true
+
+account_id = "Account_id"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "MARINA"
+id = "kv-id"
+
+[build]
+command = "cargo install worker-build && worker-build --release"
+
+[env.dev]
+build = { command = "cargo install worker-build && worker-build --dev" }
+
+[vars]
+UUID = "f70ea27f-6ac6-4b3d-8260-e458adb5b78e"
+MAIN_PAGE_URL = "https://raw.githubusercontent.com/MarinaAqua/Marina/refs/heads/main/web/index.html"
+SUB_PAGE_URL = "https://raw.githubusercontent.com/MarinaAqua/Marina/refs/heads/main/web/sublink.html"
