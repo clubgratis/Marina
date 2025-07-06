@@ -1,4 +1,4 @@
-name: run cf worker
+name: run cf workers
 
 on:
   workflow_dispatch:
