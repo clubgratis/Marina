@@ -114,7 +114,7 @@ fn link(_: Request, cx: RouteContext<Config>) -> Result<Response> {
 
     let vmess_link = {
         let config = json!({
-            "ps": "vmess",
+            "ps": "Marina vmess",
             "v": "2",
             "add": host,
             "port": "80",
@@ -131,9 +131,9 @@ fn link(_: Request, cx: RouteContext<Config>) -> Result<Response> {
         );
         format!("vmess://{}", URL_SAFE.encode(config.to_string()))
     };
-    let vless_link = format!("vless://{uuid}@{host}:443?encryption=none&type=ws&host={host}&path=%2FID&security=tls&sni={host}#vless");
-    let trojan_link = format!("trojan://{uuid}@{host}:443?encryption=none&type=ws&host={host}&path=%2FID&security=tls&sni={host}#trojan");
-    let ss_link = format!("ss://{}@{host}:443?plugin=v2ray-plugin%3Btls%3Bmux%3D0%3Bmode%3Dwebsocket%3Bpath%3D%2FID%3Bhost%3D{host}#ss", URL_SAFE.encode(format!("none:{uuid}")));
+    let vless_link = format!("vless://{uuid}@{host}:443?encryption=none&type=ws&host={host}&path=%2FID&security=tls&sni={host}#Marina vless");
+    let trojan_link = format!("trojan://{uuid}@{host}:443?encryption=none&type=ws&host={host}&path=%2FID&security=tls&sni={host}#Marina trojan");
+    let ss_link = format!("ss://{}@{host}:443?plugin=v2ray-plugin%3Btls%3Bmux%3D0%3Bmode%3Dwebsocket%3Bpath%3D%2FID%3Bhost%3D{host}#Marina ss", URL_SAFE.encode(format!("none:{uuid}")));
     
     Response::from_body(ResponseBody::Body(format!("{vmess_link}\n{vless_link}\n{trojan_link}\n{ss_link}").into()))
 }
