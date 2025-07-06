@@ -1,257 +1,680 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
-    <title>Marina - Aqua</title>
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="https://raw.githubusercontent.com/MarinaAqua/MarinaAqua/main/my-profil.png"/>
-    <meta name="description"
-        content="hello 👋 my name is Ahmad Wandi, I am a student at Antasari Banjarmasin State Islamic University, I really like machine learning">
-    <meta name="keywords" content="mayumiwandi, website, proxy, VPN, mayumi wandi, yumi, yui, mayumiyui">
-    <meta name="author" content="mayumiwandi" />
-    <meta name="copyright" content="© 2025 Yumi" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Yumi - Profile" />
-    <meta property="og:description"
-        content="hello, my name is Ahmad Wandi, I am a student at Antasari Banjarmasin State Islamic University, I really like machine learning" />
-    <meta property="og:url" content="https://mayumiwandi.github.io/" />
-    <meta property="og:site_name" content="Yumi - Profile" />
-    <meta property="og:image" content="https://github.com/user-attachments/assets/b5feabb7-3f20-4028-9436-e3f3307dd2ae" />
-    <meta property="og:locale" content="id_ID" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Yumi - Profile" />
-    <meta name="twitter:description"
-        content="hello, my name is Ahmad Wandi, I am a student at Antasari Banjarmasin State Islamic University, I really like machine learning" />
-    <meta name="twitter:image" content="https://github.com/user-attachments/assets/b5feabb7-3f20-4028-9436-e3f3307dd2ae" />
-    <meta name="twitter:site" content="@mayumiwandi" />
-    <meta name="twitter:creator" content="@mayumiwandi" />
-
-    <link rel="canonical" href="https://mayumiwandi.github.io/" />
-    <meta name="robots" content="index, follow" />
-    <meta name="geo.region" content="ID" />
-    <meta name="geo.placename" content="Indonesia" />
-
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-    <script src="https://kit.fontawesome.com/6fab3a0556.js" crossorigin="anonymous"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio2 - Mr King's Official</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* copyright Ahmad Wandi */
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-        :root {
-            font-size: 62.5%;
-        }
+:root {
+    --primary: #00ffff;
+    --dark: #0a192f;
+    --light: #ffffff;
+    --gray: #8892b0;
+    --glow-color: rgba(0, 255, 255, 0.6);
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-       
-        body {
-            background-image: url("https://i.postimg.cc/8zX0j4cX/frieren-buka.jpg"); /* https://i.postimg.cc/d01cfDkp/frieren-limited.jpg*/
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed; /* Added to make background fixed */
-            width: 100%;
-            min-height: 100vh; /* Ensure body takes at least full viewport height */
-            display: flex; /* Use flexbox */
-            flex-direction: column; /* Arrange children vertically */
-        }
+body {
+    background-image: url("https://raw.githubusercontent.com/MarinaAqua/MarinaAqua/main/background.jpeg");
+    color: var(--light);
+    line-height: 1.6;
+}
 
-        main {
-            flex-grow: 1; /* Allow main to grow and push footer down */
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 20px; /* Add some padding to prevent content touching edges on small screens */
-        }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        .container {
-            width: 28rem;
-            padding: 1rem 2rem;
-            background-color: rgba(255, 255, 255, 0.45);
-            border-radius: 2rem;
-            border: 0.1rem solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(1.5rem);
-            min-width: 25rem;
-            box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
-            max-width: 95%; /* Added max-width to prevent overflow on very small screens */
-        }
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
 
-        .image {
-            width: 40%;
-            height: auto;
-            border-radius: 5rem;
-            display: block;
-            margin: 1rem auto;
-        }
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+}
 
-        hr {
-            border-color: #673146;
-        }
+.logo:hover {
+    text-shadow: 0 0 10px var(--glow-color);
+}
 
-        h1,
-        .occupation {
-            text-align: center;
-        }
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
 
-        h1 {
-            font-family: Muli, sans-serif; /* Make sure Muli font is available or linked */
-            font-weight: 700;
-            font-size: 2.3rem;
-        }
+.nav-links a {
+    color: var(--light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
-        .occupation {
-            margin-bottom: 0.5rem;
-            font-size: 1.5rem;
-            font-family: "Space Mono", monospace; /* Make sure Space Mono font is available or linked */
-        }
+.nav-links a.active {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--glow-color);
+}
 
-        .link-boxes {
-            margin: 2rem 1rem;
-            font-family: Muli, sans-serif; /* Make sure Muli font is available or linked */
-            font-weight: 700;
-            font-size: 1.4em;
-            text-transform: capitalize;
+.nav-links a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--glow-color);
+}
 
-        }
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
 
-        .link-boxes a {
-            text-decoration: none;
-            display: block;
-            color: #27213b;
-            border: 0.1rem solid #673146;
-            text-align: center;
-            margin: 0.7rem;
-            border-radius: 0.5rem;
-            padding: 0.3rem;
-            transition: all 200ms ease-in-out;
-            box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
-        }
+/* Hologram Effect */
+@keyframes hologramFlicker {
+    0% { opacity: 0.97; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.97; }
+}
 
-        .link-boxes a:hover {
-            border: 0.1rem solid #27213b;
-            background-color: #01bae9;
-            cursor: pointer;
-        }
+@keyframes hologramScan {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
 
-        .location {
-            text-align: center;
-            margin: 0.7rem;
-            font-size: 1.2rem;
-            font-family: "Space Mono", monospace; /* Make sure Space Mono font is available or linked */
-        }
+.hologram-container {
+    position: relative;
+    /* border: 2px dotted var(--primary); */
+    background: rgba(0, 255, 255, 0.05);
+    padding: 5%;
+    margin: 20px 0;
+    overflow: hidden;
+    animation: hologramFlicker 2s infinite;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
 
-        footer {
-            width: 100%; /* Ensure footer takes full width */
-            margin-top: auto; /* Push footer to the bottom */
-            padding: 10px 0; /* Add some padding */
-            color: white; /* Set text color for footer */
-            /* Remove fixed positioning if using flexbox centering */
-            /* position: fixed;
-            bottom: 0;
-            left: 0; */
-        }
+.hologram-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 255, 255, 0.2),
+        transparent
+    );
+    animation: hologramScan 2s linear infinite;
+    pointer-events: none;
+}
 
-        footer p {
-             /* Adjust styling for the paragraph inside footer if needed */
-            margin: 0; /* Remove default paragraph margin */
-            font-size: 1.6rem; /* Ukuran teks copyright di layar besar */
-            font-weight: bold; /* Optional: membuat teks jadi tebal */
-        }
-        .footer-yumi-link {
-            color: inherit; /* Menggunakan warna teks dari parent (warna putih footer) */
-            text-decoration: none; /* Menghilangkan garis bawah default */
-            /* Animasi saat perubahan warna dan garis bawah */
-            transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-        }
-        .footer-yumi-link:hover {
-            color: #01bae9; /* Ganti warna saat disorot, gunakan warna yang kontras */
-            text-decoration: underline; /* Tambahkan garis bawah saat disorot */
-            cursor: pointer; /* Mengubah kursor */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Warna shadow */
-        }
+.hologram-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    pointer-events: none;
+}  
 
-        @media only screen and (min-width:992px) {
-            .container {
-                width: 35rem; /* Allow slightly wider container on larger screens */
-            }
+/* Content Sections */
+.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
 
-            .image {
-                width: 30%; /* Slightly smaller image on larger screens relative to container */
-            }
+.content-section.active {
+    display: block;
+    opacity: 1;
+}
 
-            h1 {
-                font-size: 2.8rem;
-            }
+/* Hero Section */
+.hero-content {
+    flex: 1;
+}
 
-            .occupation {
-                font-size: 1.6rem;
-            }
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    transition: text-shadow 0.3s ease;
+}
 
-            .link-boxes {
-                font-size: 1.6em;
-            }
+.hero-content h1:hover {
+    text-shadow: 0 0 15px var(--glow-color);
+}
 
-            .location {
-                font-size: 1.4rem;
-            }
+.hero-content h2 {
+    color: var(--primary);
+    font-size: 24px;
+    margin-bottom: 16px;
+    transition: text-shadow 0.3s ease;
+}
 
-            footer p {
-                 font-size: 1.6rem;
-            }
-        }
+.hero-content h2:hover {
+    text-shadow: 0 0 10px var(--glow-color);
+}
+
+.hero-content p {
+    color: var(--gray);
+    margin-bottom: 32px;
+    max-width: 500px;
+    transition: color 0.3s ease;
+}
+
+.hero-content p:hover {
+    color: var(--light);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: var(--primary);
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00cccc;
+    box-shadow: 0 0 20px var(--glow-color);
+    transform: scale(1.05);
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.social-links a {
+    color: var(--gray);
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--glow-color);
+    transform: translateY(-2px);
+}
+
+.profile-image {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    flex-shrink: 0;
+}
+
+.profile-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.profile-circle:hover {
+    box-shadow: 0 0 30px var(--glow-color);
+    transform: scale(1.05);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.profile-circle img:hover {
+    box-shadow: 0 0 20px var(--glow-color);
+}
+
+/* Project Cards */
+.projects-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid var(--primary);
+    padding: 20px;
+    background: rgba(0, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 20px var(--glow-color);
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    transition: text-shadow 0.3s ease;
+}
+
+.project-card h3:hover {
+    text-shadow: 0 0 10px var(--glow-color);
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;  /* Ubah dari grid ke flex */
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px; /* Memperbesar gap antara Frontend dan Backend */
+    padding: 40px; /* Menambah padding untuk space dari container */
+    max-width: 1000px; /* Membatasi lebar maksimal agar tidak terlalu lebar */
+    margin: 0 auto; /* Center skills grid */
+}
+.skill-category{
+    flex: 1;  /* Membuat setiap category mengambil ruang yang sama */
+    max-width: 45%;  /* Membatasi lebar maksimal */
+
+}
+
+.skill-category h3 {
+    color: var(--primary);
+    margin-bottom: 10%;
+    font-size: 24px; /* Memperbesar ukuran font */  
+    text-align: center;
+    transition: text-shadow 0.3s ease;
+}
+
+.skill-category h3:hover {
+    text-shadow: 0 0 10px var(--glow-color);
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    margin-bottom: 25px; /* Memperbesar jarak antar skill */
+    font-size: 16px; /* Memperbesar ukuran font */
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid var(--primary);
+    margin-top: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    min-width: 250px; /* Menambah minimal width */
+}
+
+.skill-bar:hover {
+    box-shadow: 0 0 15px var(--glow-color);
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 1s ease-in-out;
+    box-shadow: 0 0 10px var(--glow-color); /* Menambah glow effect */
+}
+
+/* Timeline */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--primary);
+    background: rgba(0, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    box-shadow: 0 0 20px var(--glow-color);
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: black;
+        opacity: 90%;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hologram-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .profile-image {
+        order: 1;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+    }    
+
+    .skills-grid {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category {
+        max-width: 100%;  /* Full width on mobile */
+    }
+}
     </style>
-
-    </head>
+</head>
 
 <body>
-    <main>
-        <div class="container shadow">
-            <img class="image" src="https://raw.githubusercontent.com/MarinaAqua/MarinaAqua/main/my-logo.jpg" alt="Wandi-Image" loading="lazy">
-            <h1> Marina </h1>
-            <p class="occupation">I'am a student from planet namex</p>
-            <hr />
-            <div class="link-boxes">
-                <a class="shadow" title="View Yumi GitHub profile" href="https://github.com/" target="_blank"><i
-                        class="fa fa-github icon" aria-hidden="true"></i> GitHub</a>
-
-                <a class="shadow" title="View Yumi Instagram profile" href="https://www.instagram.com/"
-                    target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
-
-                <a class="shadow" title="View Yumi Facebook profile" href="https://www.facebook.com/"
-                    target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a>
-
-                <a class="shadow" title="Send Message Telegram" href="https://t.me/club_gratis" target="_blank"><i
-                        class="fa-solid fa-paper-plane" aria-hidden="true"></i> Telegram</a>
-
-                <a class="shadow" title="View Yumi Tiktok profile" href="https://www.tiktok.com/" target="_blank"><i
-                        class="fa-brands fa-tiktok" aria-hidden="true"></i> Tiktok</a>
+    <div class="container">
+        <nav>
+            <div class="logo">Mr King's Official</div>
+            <div class="nav-links">
+                <a data-section="home" class="active">Home</a>
+                <a data-section="about">About</a>
+                <a data-section="projects">Projects</a>
+                <a data-section="skills">Skills</a>
+                <a data-section="content">Content</a>
             </div>
-            <hr />
-            <p class="location"><i class="fa fa-map-marker icon" aria-hidden="true"> </i> Zimbabwe</p>
-        </div>
-    </main>
-    <footer class="text-center">
-        <p>&#169;
-          <a href="https://t.me/club_gratis" class="footer-yumi-link" title="Link terkait Yumi">Grup</a>, 2025</p>
-    </footer>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <main id="main-content">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="hologram-container">
+                    <div class="hero-content">
+                        <h1>Hi, I'm Mr King's Official</h1>
+                        <h2>I'M A 
+                            <span class="typewriter-text"></span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa distincta repudiandae
+                            architecto et iste quisquam rerum molestiae non fraudalentur.</p>
+                        <a href="#" class="btn">More Here</a>
+                        <div class="social-links">
+                            <a href="https://github.com/MarinaAqua/Portofolio2/"><i class="fab fa-github"></i></a>
+                            <a href="https://www.youtube.com/@mrkingsofficial6366"><i class="fab fa-youtube"></i></a>
+                            <a href="https://t.me/club_gratis"><i class="fab fa-telegram"></i></a>
+                            <a href="https://t.me/club_gratis1"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="profile-image">
+                        <div class="profile-circle">
+                            <img src="https://raw.githubusercontent.com/MarinaAqua/MarinaAqua/main/logo.jpg" alt="Profile">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="hologram-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Early Years</h3>
+                            <p>Started coding at age 12, building simple games and websites.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Education</h3>
+                            <p>Computer Science degree with focus on AI and Machine Learning.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Present</h3>
+                            <p>Leading development teams and creating impactful solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="hologram-container">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>AI Image Generator</h3>
+                            <p>A deep learning model that generates artistic images from text descriptions.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Smart Home System</h3>
+                            <p>IoT-based home automation system with voice control and energy monitoring.</p>
+                            <div class="tech-stack">
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>React Native</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Blockchain Wallet</h3>
+                            <p>Secure cryptocurrency wallet with multi-signature support.</p>
+                            <div class="tech-stack">
+                                <span>Solidity</span>
+                                <span>Web3.js</span>
+                                <span>Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Skills Sections -->
+            <section id="skills" class="content-section">
+                <div class="hologram-container">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <ul class="skill-list">
+                                <li>
+                                    HTML/CSS
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    JavaScript
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    React
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <ul class="skill-list">
+                                <li>
+                                    Node.js
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 88%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Python
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 92%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Database
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 87%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Section -->
+            <section id="content" class="content-section">
+                <div class="hologram-container">
+                    <div class="content-grid">
+                        <h2>Latest Blog Posts</h2>
+                        <!-- Add your blog posts or other content here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+              // DOM Elements
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+        const contentSections = document.querySelectorAll('.content-section');
+
+        // Toggle mobile menu
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-links') && !e.target.closest('.menu-btn')) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Handle navigation
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Update active nav item
+                navItems.forEach(nav => nav.classList.remove('active'));
+                item.classList.add('active');
+
+                // Show corresponding section
+                const sectionId = item.getAttribute('data-section');
+                contentSections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === sectionId) {
+                        section.classList.add('active');
+                    }
+                });
+
+                // Close mobile menu after click
+                navLinks.classList.remove('active');
+            });
+        });
+
+
+        const texts = [
+            " DEVELOPER",
+            "YOUTUBER",
+            "DESIGNER"
+        ]
+        
+        let speed = 100;
+        
+        const textElements = document.querySelector(".typewriter-text")
+        
+        let textIndex = 0;
+        let charcterIndex = 0;
+        
+        function typeWriter() {
+            if(charcterIndex < texts[textIndex].length){
+                textElements.innerHTML += texts[textIndex].charAt(charcterIndex);
+                charcterIndex++;
+                setTimeout(typeWriter, speed); 
+            }
+            else{
+                setTimeout(eraseText, 1000)
+            }
+        }
+        
+        function eraseText() {
+            if(textElements.innerHTML.length > 0){
+                textElements.innerHTML = textElements.innerHTML.slice(0,-1)
+                setTimeout(eraseText, 50)
+            }
+            else{
+                textIndex = (textIndex + 1) % texts.length;
+                charcterIndex = 0;
+                setTimeout(typeWriter,500)
+            }
+        }
+        
+        window.onload = typeWriter;
+        
+    </script>
 </body>
+
 </html>
