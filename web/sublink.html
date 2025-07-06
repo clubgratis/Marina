@@ -1403,7 +1403,7 @@
       let selectedProxy = null;
       const defaultProxyUrl =
         "https://raw.githubusercontent.com/MarinaAqua/ProxyIP/refs/heads/main/Alive.txt";
-      const serverDomains = ["marinaaqua366.workers.dev"];
+      const serverDomains = ["your.domain.com"];
       let selectedServerDomain = serverDomains[0]; // Default to first domain
       const defaultUUID = "ccccccc1-bbbb-4aaa-addd-aaaaaaaaaaa1";
       const itemsPerPage = 10;
@@ -1708,8 +1708,7 @@
               const userInfo = btoa(`${method}:${password}`);
 
               // Create the new format SS URL with dynamic port
-              // connectionUrl = `ss://${userInfo}@${server}:${port}?encryption=none&type=ws&host=${host}&path=${path}&security=${security}&sni=${sni}#${name}`;
-              connectionUrl = `ss://${userInfo}@${server}:${port}?v2ray-plugin%3Btls%3Bmux=0%3Bmode=websocket%3Bpath=${path}%3Bsni=${sni}#${name}`;
+              connectionUrl = `ss://${userInfo}@${server}:${port}?encryption=none&type=ws&host=${host}&path=${path}&security=${security}&sni=${sni}#${name}`;
             }
 
             // Display the result
