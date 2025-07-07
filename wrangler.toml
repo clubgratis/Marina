@@ -1,14 +1,14 @@
-name = "vpn"
+name = "marina"
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
 minify = true
 
-account_id = "78988b9ede110ad4f883b48acb578ea9"
+account_id = "d28d062dbe5162da117182ad76ef8f81"
 workers_dev = true
 
 [[kv_namespaces]]
 binding = "MARINA"
-id = "d1a9d81b42a944dd99a596e669cb39d0"
+id = "b00b52dff819469aa63147808f240034"
 
 [build]
 command = "cargo install worker-build && worker-build --release"
