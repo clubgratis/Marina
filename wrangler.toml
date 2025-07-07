@@ -3,12 +3,12 @@ main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
 minify = true
 
-account_id = "3b22f49432e580f422437fa6ce49a93f"
+account_id = "78988b9ede110ad4f883b48acb578ea9"
 workers_dev = true
 
 [[kv_namespaces]]
 binding = "MARINA"
-id = "17bb5b5cb49142279227b943147bc75e"
+id = "d1a9d81b42a944dd99a596e669cb39d0"
 
 [build]
 command = "cargo install worker-build && worker-build --release"
@@ -18,5 +18,5 @@ build = { command = "cargo install worker-build && worker-build --dev" }
 
 [vars]
 UUID = "ccccccc1-bbbb-4aaa-addd-aaaaaaaaaaa1"
-MAIN_PAGE_URL = "https://raw.githubusercontent.com/MarinaAqua/Marina/refs/heads/main/web/index.html"
-SUBLINK_PAGE_URL = "https://raw.githubusercontent.com/MarinaAqua/Marina/refs/heads/main/web/sublink.html"
+MAIN_PAGE_URL = "https://raw.githubusercontent.com/clubgratis/Marina/refs/heads/main/web/index.html"
+SUBLINK_PAGE_URL = "https://raw.githubusercontent.com/clubgratis/Marina/refs/heads/main/web/sublink.html"
